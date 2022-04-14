@@ -1,0 +1,11 @@
+.container {
+    color: black;
+    width: 40%;
+    margin: auto;
+    text-align: center;
+    font-family: sans-serif;
+}
+
+.container h1 {
+    font-size: 4rem;
+}
