@@ -4,7 +4,10 @@
     import CounterItem from './CounterItem.svelte'
 
     const addCounter = () => {
-        const last_id = $CounterStore.at(-1)['id']
+        let last_id = 0
+        if ($CounterStore.length != 0) {
+            last_id = $CounterStore.at(-1).id
+        }
         const newCounter = {
             id: last_id+1,
             title: 'new',
